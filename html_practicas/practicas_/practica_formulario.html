@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="formulario.css" />
+		<title>Formulario</title>
+	</head>
+	<body>
+		<form action="" method="POST" class="form">
+			<label class="label" for="name">Nombre: </label>
+			<input type="text" name="name" id="name" maxlength="30" placeholder="Escribe tu nombre" />
+			<label class="label" for="lastname">Apellido: </label>
+			<input
+				type="text"
+				name="lastname"
+				id="lastname"
+				maxlength="30"
+				placeholder="Escribe tu apellido"
+			/>
+			<label class="label" for="email">Email: </label>
+			<input type="email" name="email" id="email" placeholder="correo@empresa.com" required />
+			<label class="label" for="issue">Asunto</label>
+			<select name="issue" id="issue" size="3">
+				<option value="1">Pedir presupuesto web</option>
+				<option value="2">Solicitar cita previa</option>
+				<option value="3">Otros</option>
+			</select>
+			<label class="label" for="contact">¿Cómo nos ha conocido?</label>
+			<div style="display: flex">
+				<input type="checkbox" id="contact_cbox_1" value="amigo" multiple />
+				<label for="contact_cbox_1">Un amigo</label>
+				<input type="checkbox" id="contact_cbox_2" value="googleando" multiple />
+				<label for="contact_cbox_2">Googleando</label>
+				<input type="checkbox" id="contact_cbox_3" value="buzoneo" multiple />
+				<label for="contact_cbox_3">Buzoneo</label>
+				<input type="checkbox" id="contact_cbox_4" value="otros" multiple />
+				<label for="contact_cbox_4">Otros</label>
+			</div>
+			<label class="label" for="message">Escribe tu mensaje</label>
+			<textarea name="message" id="message" maxlength="300" class="textarea" rows="5"> </textarea>
+			<div style="display: flex">
+				<input type="checkbox" id="legal_agreement" value="legal" required />
+				<label for="legal_agreement"
+					>He leído y acepto el
+					<a href="http://empresa.com/avisolegal.pdf" target="_blank"
+						>aviso legal y la política de privacidad</a
+					></label
+				>
+			</div>
+			<div style="display: flex; justify-content: flex-end">
+				<input class="button" type="submit" id="submit" />
+			</div>
+		</form>
+	</body>
+</html>
