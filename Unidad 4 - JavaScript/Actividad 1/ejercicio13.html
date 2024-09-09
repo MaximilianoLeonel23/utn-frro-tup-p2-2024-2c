@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const nro = Number(prompt('Escriba un número: '));
+			let divisiblePor;
+			if (nro % 2 == 0) {
+				divisiblePor = 2;
+			} else if (nro % 3 == 0) {
+				divisiblePor = 3;
+			} else if (nro % 5 == 0) {
+				divisiblePor = 5;
+			} else if (nro % 7 == 0) {
+				divisiblePor = 7;
+			} else {
+				divisiblePor = 0;
+			}
+			if (divisiblePor != 0) {
+				document.write('Es divisible por ' + divisiblePor);
+			} else {
+				document.write('No es divisible por 2, 3, 5 ni 7');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			/* 
+        0-3: Muy deficiente
+ ● 3-5: Insuficiente
+ ● 5-6: Suficiente
+ ● 6-7: Bien
+ ● 7-9: Notable
+ ● 9-10: Sobresaliente*/
+			let nota = Number(prompt('Ingrese la nota'));
+			while (nota < 0 || nota > 10) {
+				nota = Number(prompt('Ingrese una nota válida (0-10)'));
+			}
+			let concepto;
+			switch (nota) {
+				case 0:
+				case 1:
+				case 2:
+					concepto = 'Muy deficiente';
+					break;
+				case 3:
+				case 4:
+					concepto = 'Insuficiente';
+					break;
+				case 5:
+					concepto = 'Suficiente';
+					break;
+				case 6:
+					concepto = 'Bien';
+					break;
+				case 7:
+				case 8:
+					concepto = 'Notable';
+					break;
+				case 9:
+				case 10:
+					concepto = 'Sobresaliente';
+					break;
+			}
+
+			document.write('Nota: ' + concepto);
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const nro1 = prompt('Escriba el primer número: ');
+			const nro2 = prompt('Escriba el segundo número: ');
+			const nro3 = prompt('Escriba el tercer número: ');
+
+			let mayor;
+			if (nro1 > nro2 && nro1 > nro3) {
+				mayor = nro1;
+			} else if (nro2 > nro1 && nro2 > nro3) {
+				mayor = nro2;
+			} else if (nro3 > nro1 && nro3 > nro2) {
+				mayor = nro3;
+			} else if (nro1 == nro2 || nro2 == nro3 || nro1 == nro3) {
+				mayor = 0;
+			}
+			if (mayor != 0) {
+				document.write('El mayor es ' + mayor);
+			} else {
+				document.write('No hay un número mayor');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

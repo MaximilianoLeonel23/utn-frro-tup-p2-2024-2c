@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const nro1 = Number(prompt('Escriba un número: '));
+			const nro2 = Number(prompt('Escriba otro número: '));
+			let menor = nro1;
+			let mayor = nro2;
+			if (nro2 < nro1) {
+				menor = nro2;
+				mayor = nro1;
+			}
+			let divisiblePor = '';
+
+			for (let i = 1; i <= menor; i++) {
+				if (nro1 % i == 0 && nro2 % i == 0) {
+					divisiblePor += i + ', ';
+				}
+
+				if (i == menor) {
+					divisiblePor = divisiblePor.slice(0, -2);
+				}
+			}
+
+			if (divisiblePor != '') {
+				document.write('Ambos números son divisbles por ' + divisiblePor);
+			} else {
+				document.write('No tienen divisores en común');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

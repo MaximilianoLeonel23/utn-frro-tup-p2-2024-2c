@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const frase = prompt('Escriba una frase: ');
+
+			let a = 0;
+			let e = 0;
+			let i = 0;
+			let o = 0;
+			let u = 0;
+			for (let k = 0; k <= frase.length; k++) {
+				switch (frase[k]) {
+					case 'a':
+						a++;
+						break;
+					case 'e':
+						e++;
+						break;
+					case 'i':
+						i++;
+						break;
+					case 'o':
+						o++;
+						break;
+					case 'u':
+						u++;
+						break;
+				}
+			}
+
+			document.write(
+				'La frase tiene: a = ' + a + ', e = ' + e + ', i = ' + i + ', o = ' + o + ', u = ' + u,
+			);
+		</script>
+	</head>
+	<body></body>
+</html>

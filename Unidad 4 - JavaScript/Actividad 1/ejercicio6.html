@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const nro1 = prompt('Escriba el primer número: ');
+			const nro2 = prompt('Escriba el segundo número: ');
+			let mayor;
+			if (nro1 > nro2) {
+				mayor = nro1;
+			} else if (nro2 > nro1) {
+				mayor = nro2;
+			} else {
+				mayor = 0;
+			}
+			if (mayor != 0) {
+				document.write('El mayor es ' + mayor);
+			} else {
+				document.write('Son iguales');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
