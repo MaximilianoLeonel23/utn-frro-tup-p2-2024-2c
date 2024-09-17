@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const nro1 = Number(prompt('Ingrese un número'));
+			const nro2 = Number(prompt('Ingrese otro número'));
+
+			const maximo = calcularMaximo(nro1, nro2);
+			console.log('El máximo es: ' + maximo);
+			function calcularMaximo(nro1, nro2) {
+				if (nro1 > nro2) {
+					return nro1;
+				} else {
+					return nro2;
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const anio = Number(prompt('Ingrese el año'));
+			const esAnioBisiesto = esBisiesto(anio);
+			if (esAnioBisiesto) {
+				console.log('El año ' + anio + ' es bisiesto');
+			} else {
+				console.log('El año ' + anio + ' no es bisiesto');
+			}
+			function esBisiesto(anio) {
+				if (anio % 400 == 0) {
+					return true;
+				} else if (anio % 4 == 0 && anio % 100 != 0) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const dia = Number(prompt('Ingrese el día'));
+			const mes = Number(prompt('Ingrese el número del mes'));
+			const anio = Number(prompt('Ingrese el año'));
+			const meses = [
+				'enero',
+				'febrero',
+				'marzo',
+				'abril',
+				'mayo',
+				'junio',
+				'julio',
+				'agosto',
+				'septiembre',
+				'octubre',
+				'noviembre',
+				'diciembre',
+			];
+			console.log(
+				'El día anterior al ' +
+					dia +
+					' de ' +
+					meses[mes - 1] +
+					' es: ' +
+					obtenerDiaAnterior(dia, mes, anio) +
+					` de ${dia == 1 ? meses[mes - 2] : meses[mes - 1]}`,
+			);
+			function obtenerDiaAnterior(dia, mes, anio) {
+				const fecha = new Date(anio, mes, dia).getDate();
+				if (fecha - 1 == 0) {
+					const mesAnterior = new Date(anio, mes, dia).getMonth() - 1;
+					const diasMesAnterior = new Date(anio, mesAnterior, 0).getDate();
+					return diasMesAnterior;
+				} else {
+					return fecha - 1;
+				}
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

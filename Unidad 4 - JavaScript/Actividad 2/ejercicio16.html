@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const dia = Number(prompt('Ingrese el día'));
+			const mes = Number(prompt('Ingrese el número del mes'));
+			const anio = Number(prompt('Ingrese el año'));
+
+			console.log('El mes ' + mes + ' tiene ' + obtenerDiasDelMes(mes, anio) + ' dias');
+			function obtenerDiasDelMes(mes, anio) {
+				const dias = new Date(anio, mes, 0).getDate();
+				return dias;
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

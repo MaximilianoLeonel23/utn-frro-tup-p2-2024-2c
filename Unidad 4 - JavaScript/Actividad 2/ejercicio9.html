@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let nro = Number(prompt('Ingrese un número'));
+			console.log(imprimirElDobleDelSiguienteAlCuadrado(nro));
+			function imprimirElDobleDelSiguienteAlCuadrado(nro) {
+				console.log(
+					'El doble del siguiente al cuadrado de ' + nro + ' es: ' + cuadrado(doble(siguiente(nro))),
+				);
+			}
+			function siguiente(nro) {
+				return nro + 1;
+			}
+			function doble(nro) {
+				return nro * 2;
+			}
+			function cuadrado(nro) {
+				return nro * nro;
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

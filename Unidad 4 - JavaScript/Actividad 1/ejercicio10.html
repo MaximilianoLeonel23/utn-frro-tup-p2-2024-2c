@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const frase = prompt('Escriba una frase: ');
+			let vocales = '';
+			for (let i = 0; i <= frase.length; i++) {
+				if (
+					frase[i] == 'a' ||
+					frase[i] == 'e' ||
+					frase[i] == 'i' ||
+					frase[i] == 'o' ||
+					frase[i] == 'u'
+				) {
+					if (i == frase.length) {
+						vocales += frase[i];
+					} else {
+						vocales += frase[i] + ', ';
+					}
+				}
+			}
+			console.log('Las vocales que aparecen son: ' + vocales);
+		</script>
+	</head>
+	<body></body>
+</html>

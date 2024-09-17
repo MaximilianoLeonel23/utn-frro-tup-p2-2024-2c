@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			let nro = Number(prompt('Ingrese un número'));
+			console.log(imprimirElDobleDelSiguiente(nro));
+			function imprimirElDobleDelSiguiente(nro) {
+				console.log('El doble del siguiente de ' + nro + ' es: ' + doble(siguiente(nro)));
+			}
+			function siguiente(nro) {
+				return nro + 1;
+			}
+			function doble(nro) {
+				return nro * 2;
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

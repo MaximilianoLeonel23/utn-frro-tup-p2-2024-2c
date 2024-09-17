@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const mes = Number(prompt('Ingrese el número del mes'));
+			console.log('El mes ' + mes + ' tiene ' + obtenerDiasDelMes(mes) + ' dias');
+			function obtenerDiasDelMes(mes) {
+				const dias = new Date(2024, mes, 0).getDate();
+				return dias;
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

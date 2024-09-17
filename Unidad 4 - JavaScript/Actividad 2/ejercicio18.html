@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script>
+			const dia = Number(prompt('Ingrese el día'));
+			const mes = Number(prompt('Ingrese el número del mes'));
+			const anio = Number(prompt('Ingrese el año'));
+			const meses = [
+				'enero',
+				'febrero',
+				'marzo',
+				'abril',
+				'mayo',
+				'junio',
+				'julio',
+				'agosto',
+				'septiembre',
+				'octubre',
+				'noviembre',
+				'diciembre',
+			];
+			console.log(
+				`El último día de ${meses[mes - 1]} es el ${obtenerUltimoDiaDelMes(dia, mes, anio)}`,
+			);
+			function obtenerUltimoDiaDelMes(dia, mes, anio) {
+				const ultimoDia = new Date(anio, mes, 0).getDate();
+				return ultimoDia;
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
